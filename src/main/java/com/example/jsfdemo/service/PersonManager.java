@@ -15,27 +15,24 @@ public class PersonManager {
 		Person newPerson = new Person();
 
 		newPerson.setFirstName(person.getFirstName());
+		newPerson.setLastName(person.getLastName());
+		newPerson.setPesel(person.getPesel());
 		newPerson.setZipCode(person.getZipCode());
-		newPerson.setPin(person.getPin());
+		newPerson.setCity(person.getCity());
+		newPerson.setStreet(person.getStreet());
 		newPerson.setDateOfBirth(person.getDateOfBirth());
-		newPerson.setMarried(person.isMarried());
 		newPerson.setWeight(person.getWeight());
-		newPerson.setNumOfChildren(person.getNumOfChildren());
-
+		newPerson.setPhone(person.getPhone());
+		newPerson.setGrowth(person.getGrowth());
+				
+		
 		db.add(newPerson);
 	}
 
 	// Removes the person with given PIN
 	public void deletePerson(Person person) {
-		Person personToRemove = null;
-		for (Person p : db) {
-			if (person.getPin().equals(p.getPin())) {
-				personToRemove = p;
-				break;
-			}
-		}
-		if (personToRemove != null)
-			db.remove(personToRemove);
+			
+			db.remove(person);
 	}
 
 	public List<Person> getAllPersons() {

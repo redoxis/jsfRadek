@@ -10,12 +10,15 @@ import javax.validation.constraints.Size;
 public class Person {
 	
 	private String firstName = "unknown";
-	private String zipCode = "";
-	private String pin = "";
-	private Date dateOfBirth = new Date();
+	private String lastName = "unknow";
+	private long pesel;
+	private String zipCode;
+	private String city;
+	private String street;
+	private Date dateOfBirth;
 	private double weight;
-	private boolean married;
-	private int numOfChildren;
+	private  long phone;
+	private double growth;
 	
 	@Size(min = 2, max = 20)
 	public String getFirstName() {
@@ -33,22 +36,6 @@ public class Person {
 		this.zipCode = zipCode;
 	}
 	
-	@Size(min = 2)
-	public String getPin() {
-		return pin;
-	}
-	public void setPin(String pin) {
-		this.pin = pin;
-	}
-	
-	@Min(0)
-	public int getNumOfChildren() {
-		return numOfChildren;
-	}
-	public void setNumOfChildren(int numOfChildren) {
-		this.numOfChildren = numOfChildren;
-	}
-	
 	@Past
 	public Date getDateOfBirth() {
 		return dateOfBirth;
@@ -64,11 +51,43 @@ public class Person {
 		this.weight = weight;
 	}
 	
-	public boolean isMarried() {
-		return married;
+	public String getLastName() {
+		return lastName;
 	}
-	public void setMarried(boolean married) {
-		this.married = married;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
+	public long getPesel() {
+		return pesel;
+	}
+	public void setPesel(long pesel) {
+		this.pesel = pesel;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getStreet() {
+		return street;
+	}
+	public void setStreet(String street) {
+		this.street = street;
+	}
+	public long getPhone() {
+		return phone;
+	}
+	public void setPhone(long phone) {
+		this.phone = phone;
+	}
+	public double getGrowth() {
+		return growth;
+	}
+	public void setGrowth(double growth) {
+		this.growth = growth;
+	}
+	
+	
 	
 }

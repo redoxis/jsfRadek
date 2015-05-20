@@ -1,4 +1,6 @@
-package com.example.jsfdemo.web;
+/*
+ * package com.example.jsfdemo.web;
+
 
 import javax.faces.application.FacesMessage;
 import javax.faces.component.UIComponent;
@@ -25,3 +27,4 @@ public class PinValidator implements Validator {
 		}
 	}
 }
+*/

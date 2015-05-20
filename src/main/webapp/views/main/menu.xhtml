@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
@@ -5,22 +6,28 @@
 	xmlns:h="http://java.sun.com/jsf/html">
   <div>
 	<h:form>
-	  <ul>
-		<li>
-		  <h:commandLink action="home?faces-redirect=true">
-			<h:outputText value="#{msg.linkHome}" />
+	  
+	<ul>
+	<h:form>
+		
+		  <h:commandLink action="wyszukaj.xhtml">
+			<input type="submit" value="wyszukiwarka osób" style="right: 50px"></input>
 		  </h:commandLink>
-		</li>
-		<li>
-		  <h:commandLink action="add?faces-redirect=true">
-			<h:outputText value="#{msg.personAddLabel}" />
-		  </h:commandLink></li>
-		<li>
-		  <h:commandLink action="showPersons?faces-redirect=true">
-			 <h:outputText value="#{msg.personAllLabel}" />
+</h:form>		
+	<h:form>
+		  <h:commandLink action="dodajPacjenta.xhtml">
+			<input type="submit" value="dodaj pacjenta"></input>
 		  </h:commandLink>
-		</li>
-	</ul>
+		</h:form>
+		<h:form>
+		  <h:commandLink action="Narzedzia.xhtml">
+			 <input type="submit" value="Narzędzia" style="left: 50px; clip: rect(auto, auto, auto, 50px)"></input>
+		
+		  </h:commandLink>
+		  </h:form>
+		  
+		</ul>
+	
    </h:form>
   </div>
 </ui:composition>

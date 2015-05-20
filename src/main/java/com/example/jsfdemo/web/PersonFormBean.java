@@ -1,4 +1,4 @@
-package com.example.jsfdemo.web;
+/* package com.example.jsfdemo.web;
 
 import java.io.Serializable;
 import java.util.Calendar;
@@ -103,3 +103,4 @@ public class PersonFormBean implements Serializable {
 		}
 	}
 }
+*/
